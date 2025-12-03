@@ -109,6 +109,9 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# Terraform local state backup directory
+state-backups/
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
