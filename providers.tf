@@ -1,15 +1,20 @@
 terraform {
-  required_providers {
-    digitalocean = {
-      source  = "digitalocean/digitalocean"
-      version = "2.69.0"
-    }
+  required_version = ">= 1.0"
 
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "7.13.0"
+    }
   }
 }
 
-provider "digitalocean" {
-  token             = var.do_token
-  spaces_access_id  = var.spaces_access_id
-  spaces_secret_key = var.spaces_secret_key
+provider "google" {
+  region = var.gcp_region
+
+  default_labels = {
+    env        = var.env
+    managed_by = "terraform"
+    repo       = "infra-core"
+  }
 }

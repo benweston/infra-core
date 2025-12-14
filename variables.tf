@@ -1,17 +1,15 @@
-variable "do_token" {
+variable "billing_account_id" {
+  description = "Google Cloud Billing Account ID"
   type        = string
   sensitive   = true
-  description = "DigitalOcean API token"
 }
 
-variable "spaces_access_id" {
+variable "gcp_region" {
+  description = "The Google Cloud region"
   type        = string
-  sensitive   = true
-  description = "DigitalOcean Spaces Object Storage Access Key"
 }
 
-variable "spaces_secret_key" {
+variable "env" {
+  description = "The environment name (e.g., sandbox, dev, test, stage, prod)"
   type        = string
-  sensitive   = true
-  description = "DigitalOcean Spaces Object Storage Secret Key"
 }
