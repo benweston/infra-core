@@ -17,12 +17,11 @@ resource "google_folder" "sandbox" {
 }
 
 resource "google_project" "infra_core" {
-  name                = "Infra - Core"
-  project_id          = "infra-core-${random_integer.suffix.result}"
-  folder_id           = google_folder.platform.name
-  billing_account     = var.billing_account_id
-  auto_create_network = false
-  deletion_policy     = "PREVENT"
+  name            = "Infra - Core"
+  project_id      = "infra-core-${random_integer.suffix.result}"
+  folder_id       = google_folder.platform.name
+  billing_account = var.billing_account_id
+  deletion_policy = "PREVENT"
 }
 
 resource "google_project_service" "enabled_apis" {
