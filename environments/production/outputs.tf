@@ -4,7 +4,7 @@ output "project_id" {
 }
 
 output "project_console_url" {
-  description = "Link to the Project Dashboard in Google Cloud Console."
+  description = "Link to the Project Dashboard in DigitalOcean Console."
   value       = "https://cloud.digitalocean.com/projects/${digitalocean_project.infra_core.id}/"
 }
 
