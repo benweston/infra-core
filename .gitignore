@@ -114,6 +114,7 @@ state-backups/
 
 # Backup for local backend
 backend.tf.bak
+backend.tf.bakup
 
 ### Vim ###
 # Swap
