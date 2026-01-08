@@ -1,6 +1,6 @@
 <a href="https://github.com/benweston/infra-core">
     <img
-        src="./assets/banner.png"
+        src="./assets/banners/banner.png"
         alt="Core Infrastructure"
         width="1100"
         height="130"
