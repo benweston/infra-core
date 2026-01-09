@@ -1,0 +1,12 @@
+name: CI (infra-cicd plumbing test)
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  ci:
+    uses: benweston/infra-cicd/.github/workflows/ci-python.yml@main
+    with:
+      python-version: "3.12"
