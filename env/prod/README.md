@@ -1,3 +1,3 @@
-# `/production`
+# `/prod`
 
 > Production environment.   

@@ -15,12 +15,8 @@ resource "digitalocean_spaces_bucket" "terraform_state" {
 
     abort_incomplete_multipart_upload_days = 3
 
-    expiration {
-      days = 90
-    }
-
     noncurrent_version_expiration {
-      days = 30
+      days = 90
     }
   }
 }

@@ -1,10 +1,9 @@
 terraform {
   backend "s3" {
     bucket = "tfstate-900702"
-    key    = "infra-core/environments/production/terraform.tfstate"
+    key    = "infra-core/env/prod/terraform.tfstate"
 
     region = "eu-west-2"
-
     endpoints = {
       s3 = "https://lon1.digitaloceanspaces.com"
     }
