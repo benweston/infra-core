@@ -1,4 +1,4 @@
-# `/project-structure`
+# `/project-layout`
 
 > Project organisation.   
 
