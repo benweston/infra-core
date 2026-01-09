@@ -35,12 +35,12 @@ locals {
   }
 
   project_enabled_envs = {
-    "infra-core"          = []
-    "infra-cicd"          = ["dev", "stage", "prod"]
-    "infra-observability" = ["dev", "stage", "prod"]
-    "infra-security"      = ["dev", "stage", "prod"]
-    "infra-sandbox"       = ["dev"]
-    "app-portfolio"       = ["dev", "stage", "prod"]
+    "infra-core"          = []                       # Provisioner, not consumer -> doesn't require VPCs.
+    "infra-cicd"          = []                       # GitHub Actions shared library -> doesn't require VPCs.
+    "infra-observability" = ["prod"]                 # Requires an environment for deploying Droplets (Prometheus, etc.,).
+    "infra-security"      = []                       # Shared policies -> doesn't require VPCs.
+    "infra-sandbox"       = ["dev"]                  # Development environment for creating short-lived resources.
+    "app-portfolio"       = ["dev", "stage", "prod"] # Application workload.
   }
 }
 
