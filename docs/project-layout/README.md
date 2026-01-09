@@ -2,7 +2,6 @@
 
 > Project organisation.   
 
-Project structure:   
 ```bash
 infra-core/
 ├── assets/
