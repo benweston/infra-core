@@ -2,7 +2,7 @@ resource "digitalocean_spaces_bucket" "terraform_state" {
   name          = "tfstate-${random_integer.suffix.result}"
   region        = var.region
   acl           = "private"
-  force_destroy = true
+  force_destroy = false
 
   versioning {
     enabled = true

@@ -3,7 +3,7 @@
 
 provider "registry.terraform.io/digitalocean/digitalocean" {
   version     = "2.72.0"
-  constraints = "~> 2.0"
+  constraints = "2.72.0"
   hashes = [
     "h1:UdblXdxTzD3jYOQHW6ZI8ptAjQoFog5RIXqnbXStI8M=",
     "zh:06fd036391b1e67e33b9aeb6e717b3be7f3fa358192111ac6cebc6d71e69ae17",
