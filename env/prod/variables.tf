@@ -18,13 +18,3 @@ variable "region" {
   description = "The DigitalOcean region"
   type        = string
 }
-
-variable "spaces_access_key_id" {
-  type      = string
-  sensitive = true
-}
-
-variable "spaces_secret_access_key" {
-  type      = string
-  sensitive = true
-}
