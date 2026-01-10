@@ -11,7 +11,7 @@ jobs:
     with:
       tf_version: "1.6.6"
       working_directory: "env/prod"
-      env_name: "prod"
+      env_name: "production"
       region: "lon1"
     secrets:
       DO_TOKEN: ${{ secrets.DO_TOKEN }}
