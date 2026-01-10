@@ -7,7 +7,7 @@ on:
 
 jobs:
   prod_plan:
-    uses: benweston/infra-cicd/.github/workflows/terraform-plan.yml@main
+    uses: benweston/infra-cicd/.github/workflows/terraform-plan.yml@v0.2.1
     with:
       tf_version: "1.6.6"
       working_directory: "env/prod"
