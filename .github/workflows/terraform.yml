@@ -1,0 +1,17 @@
+name: Terraform (plan)
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  prod_plan:
+    uses: benweston/infra-cicd/.github/workflows/terraform-plan.yml@main
+    with:
+      tf_version: "1.6.6"
+      working_directory: "env/prod"
+    secrets:
+      DO_TOKEN: ${{ secrets.DO_TOKEN }}
+      SPACES_ACCESS_KEY_ID: ${{ secrets.SPACES_ACCESS_KEY_ID }}
+      SPACES_SECRET_ACCESS_KEY: ${{ secrets.SPACES_SECRET_ACCESS_KEY }}
